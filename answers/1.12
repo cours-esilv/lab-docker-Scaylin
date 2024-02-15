@@ -1,2 +1,1 @@
-docker run -d --name back_container myimage
-docker run -d --name front_container -e BACKEND_URL=http://back_container:8080 myimage
+docker run -d -p 5000:5000 -e WS_BACK_URL=http://127.0.0.1:5000/ my-front-image
